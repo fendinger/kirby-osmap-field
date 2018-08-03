@@ -1,0 +1,8 @@
+{
+  "name": "osmap",
+  "description": "Kirby OpenStreetMap Field",
+  "author": "Jens Fendinger",
+  "version": "1.0.0",
+  "type": "kirby-plugin",
+  "license": "MIT"
+}
