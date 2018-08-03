@@ -17,7 +17,6 @@ In times of the GPDR it may be important to replace a Google Maps Plugin with a 
 - Support for multiple `osmap` fields per form
 - Support for `osmap` fields within `structure` fields
 - Support for `osmap` fields in file forms
-- Easy to implement (See "Getting Started", below)
 - Customizable initial position and zoom— globally and on a per-field basis
 - Compatible with Kirby 2.3.0+
 
