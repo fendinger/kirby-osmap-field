@@ -2,7 +2,7 @@
 
 This custom field for [Kirby CMS](https://getkirby.com) displays an OpenStreetMap inside the panel (Kirby's backend) to Locate a place and get its geocoordinates.
 
-Based on the [Kirby Map Field] from [August Miller](https://github.com/AugustMiller/kirby-map-field).
+Based on the [Kirby Map Field](https://github.com/AugustMiller/kirby-map-field) from [August Miller](https://github.com/AugustMiller).
 
 [Leftlet](https://leafletjs.com) JavaScript library from [Vladimir Agafonkin](http://agafonkin.com/en).
 
@@ -14,9 +14,9 @@ In times of the GPDR it may be important to replace a Google Maps Plugin with a 
 - Discrete storage of location name, latitude and longitude
 - Geocoding of location names and addresses
 - Repositionable marker (in case search doesn't nail it)
-- Support for multiple `map` fields per form
-- Support for `map` fields within `structure` fields
-- Support for `map` fields in file forms
+- Support for multiple `osmap` fields per form
+- Support for `osmap` fields within `structure` fields
+- Support for `osmap` fields in file forms
 - Easy to implement (See "Getting Started", below)
 - Customizable initial position and zoom— globally and on a per-field basis
 - Compatible with Kirby 2.3.0+
@@ -28,7 +28,7 @@ In times of the GPDR it may be important to replace a Google Maps Plugin with a 
 fields:
   location:
     label: Location
-    type: map
+    type: osmap
     center:
       lat: 48.3985233
       lng: 9.9925550
@@ -61,7 +61,7 @@ The resulting array can be used just like any other:
 $page->location()->yaml()['lat'];
 // Or!
 $location = $page->location()->yaml();
-echo $location['lng']; # => -122.6764816
+echo $location['lng']; # => 9.9925550
 ```
 
 Properties `address`, `lat` and `lng` should exist in the decoded object, but may be empty.
@@ -70,7 +70,7 @@ Kirby creator Bastian Allgeier recently created the [Geo Plugin](https://github.
 
 ## Setup
 
-``git clone https://github.com/JensFendinger/kirby-osmap.git site/fields/osmap``
+``git clone https://github.com/fendinger/kirby-osmap-field.git site/fields/osmap``
 From the root of your kirby install.
 
 Alternatively you can download the zip file, unzip it's contents into site/fields/osmap.
