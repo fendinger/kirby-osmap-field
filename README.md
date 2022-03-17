@@ -1,4 +1,4 @@
-# Kirby OpenStreetMap Field
+# Kirby 2 OpenStreetMap Field
 
 This custom field for [Kirby CMS](https://getkirby.com) displays an OpenStreetMap inside the panel (Kirby's backend) to Locate a place and get its geocoordinates.
 
